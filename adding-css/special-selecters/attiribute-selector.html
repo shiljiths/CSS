@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 2px solid red;
+        }
+        input[ type="email"]{
+            background-color: aquamarine;
+        }
+        div[class~="highlight"]{
+            background-color: yellow;
+        }
+        p[lang|='en']{ /* exact or starts with */
+            color: blue;
+        }
+        a[href^="https"]{  /*start with*/
+            color: green;
+        }
+        a[src$=".jpeg"]{
+         border: 2px dashed purple;
+         width: 120px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Css Attiribute selectors</h2>
+    <!-- 1 -->
+     <input type="text" placeholder="your name" required><br><br>
+     <!-- 2 -->
+      <input type="email" placeholder="your email"><br><br>
+      <!-- 3 -->
+       <div class="box highlight">Highlight</div>
+       <!-- 4 -->
+        <p lang="en">English Pharagraph</p>
+        <p lang="en-Us">Us English paragraph</p>
+        <a href="https://www.bing.com/search?q=https+dummy+link&FORM=D934DF&PC=D934">Login page</a>
+        <img src="../animation/download.webp" alt="sample">
+        <a href="">About page</a>
+</body>
+</html>

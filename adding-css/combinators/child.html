@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1::selection{
-            background-color: blue;
-            color: black;
-
+        .parent>p{
+            color: violet;
         }
     </style>
 </head>
 <body>
-    <h1>this is selector</h1>
+    <div class="parent">
+        <p>direct child</p>
+        <div>
+            <p>nested child</p>
+        </div>
+    </div>
+
 </body>
 </html>
